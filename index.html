@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <title>Crypto Quiz</title>
+  </head>
+  <body>
+    <div class="container">
+    <p>Here you can test your knowledge in crypto currency and blockchain tehnology :</p>
+      <!--Answer are sent in post request and are validated by checkQuiz.php script-->
+    <form action="checkQuiz.php" method="post">
+      <p> What is the concept of Fiat in currency ? </p>
+      <ol>
+        <li> <input type="radio" name="one" value="1" required>  Currency without intrinsic value, which has an assigned value. </li>
+        <li> <input type="radio" name="one" value="0" required> Commodity currency whith intrinsec value, like gold. </li>
+        <li> <input type="radio" name="one" value="0" required> Any currency used for exchange. </li>
+      </ol>
+      <hr>
+      <p> What is blockchain? ?</p>
+      <ol>
+        <li> <input type="radio" name="two" value="0" required> Database. </li>
+        <li> <input type="radio" name="two" value="1" required> Decentralized Digital ledger with all cryptocurrency transactions. </li>
+        <li> <input type="radio" name="two" value="0" required> Cryptographic algorithm.</li>
+      </ol>
+      <hr>
+      <p> How many cryptocurrencies are there ?</p>
+      <ol>
+        <li> <input type="radio" name="three" value="0" required> Bitcoin,Ethereum,Ripple. </li>
+        <li> <input type="radio" name="three" value="1" required> More than 1000. </li>
+        <li> <input type="radio" name="three" value="0" required> Almost a 100. </li>
+      </ol>
+      <hr>
+      <p> What is the concept behind Cryptocoin Mining ?</p>
+      <ol>
+        <li> <input type="radio" name="four" value="0" required> Usage of CPU or GPU computing power. </li>
+        <li> <input type="radio" name="four" value="0" required> Generating bitcoins. </li>
+        <li> <input type="radio" name="four" value="1" required> Compiling recent transactions into blocks and trying to solve a computationally difficult puzzle. </li>
+      </ol>
+      <hr>
+      <p> Wich of the following applies in Proof of Work ?</p>
+      <ol>
+        <li> <input type="checkbox" name="five One" value="1" > It is a protocol. </li>
+        <li> <input type="checkbox" name="five Two" value="0" > person can mine or validate block transactions according to how many coins he or she holds. </li>
+        <li> <input type="checkbox" name="five SThree" value="1"> The work must be moderately hard (but feasible) on the requester side but easy to check for the service provider. </li>
+      </ol>
+      <hr>
+      <input type="submit" value="Finish Quiz">
+    </div>
+</form>
+  </body>
+</html>
